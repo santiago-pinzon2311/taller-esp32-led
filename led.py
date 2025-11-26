@@ -1,7 +1,10 @@
-# led.py - Versión 1: Encender LED
+# led.py - Versión 2: Parpadeo (Blink)
 from machine import Pin
 import time
-# El LED integrado suele estar en el GPIO 2
 led = Pin(2, Pin.OUT)
-print("Encendiendo el LED...")
-led.value(1) # 1 es encendido, 0 es apagado
+print("Iniciando secuencia de parpadeo...")
+while True:
+led.value(1)
+time.sleep(0.5) # Espera medio segundo
+led.value(0)
+time.sleep(0.5)
