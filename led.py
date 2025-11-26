@@ -1,4 +1,4 @@
-# Autor: Santiago Pinzón.
+# Autor: Santiago Pinzón
 # led.py - Versión 2: Parpadeo (Blink)
 from machine import Pin
 import time
